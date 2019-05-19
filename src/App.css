@@ -1,0 +1,121 @@
+body{
+  background: #21212b;
+  font-family: sans-serif;
+}
+
+.radioApp{
+  width: 320px;
+  margin: 50px auto;
+  border-radius: 25px;
+  overflow: hidden;
+  box-shadow: 0 31px 15px -12px #0b0a0d9c
+}
+
+.head{
+  background: #edad61;
+  color: #fff;
+  font-weight: 600;
+  font-size: 22px;
+  text-align: center;
+  padding: 28px 20px;
+}
+
+a{cursor: pointer;}
+
+.head .backButton{
+  float: left;
+}
+
+.head .turnOffButton{
+  float: right;
+}
+
+.backButton img{
+  width: 14px;
+}
+
+.turnOffButton img{
+  width: 23px;
+}
+
+.stations{
+  background: #2f2f3a;
+  border-bottom: 1px solid #4d505c;
+  height: 345px;
+  overflow: hidden;
+  position: relative;
+}
+
+.yScroll{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 15px;
+  right: -19px;
+  overflow-y: scroll;
+}
+
+.station{
+  border-bottom: 1px solid #43434d;
+  padding: 17px 0 14px;
+  color: #a2abbd;
+  font-size: 22px;
+}
+
+.station .toggle{
+  cursor: pointer;
+}
+
+.stations .station:last-child {
+  border-bottom: none;
+}
+
+.frequency{
+  font-weight: bold;
+  float: right;
+}
+
+.active{
+  display: flex;
+  width: 100%;
+  align-items: center;
+  padding: 5px 0 25px;
+  transition: all .2s;
+  overflow: hidden;
+}
+.active.toggled{
+  max-height: 0;
+  padding: 0;
+}
+
+.active.notToggled{
+  max-height: 290px;
+}
+.active img{
+  width: 35px;
+}
+.active .fmLogo{
+  width: 135px;
+  border-radius: 50%;
+  border: 2px solid #ccc; 
+  margin: 0 40px;
+}
+
+.foot{
+  height: 62px;
+  background-color: #22222b;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.currently{
+  font-size: 11px;
+  font-weight: bold;
+  color: #edad61;
+}
+
+.currentFM{
+  color: #9ba2b1;
+  font-size: 23px;
+}
